@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Add New Food</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h2>Add French Fries</h2>
+        <form action="AddNewFoodServlet2" method="post">
+            <label for="foodname">Namefood:</label><br>
+            <input type="text" id="foodname" name="foodname"><br>
+
+            <label for="Type">Type:</label><br>
+            <select id="Type" name="Type">
+                <option value="Waffle Fries">Waffle Fries</option>
+                <option value="Curly Fries">Curly Fries</option>
+                <option value="Regular Fries">Regular Fries</option>
+                <option value="Tornado Fries">Tornado Fries</option>
+            </select><br>
+
+            <label>Crispness:</label><br>
+            <input type="checkbox" id="crispness1" name="crispness" value="not crispy">
+            <label for="crispness1">Not crispy</label><br>
+            <input type="checkbox" id="crispness2" name="crispness" value="little crispy">
+            <label for="crispness2">Little crispy</label><br>
+            <input type="checkbox" id="crispness3" name="crispness" value="very crispy">
+            <label for="crispness3">Very crispy</label><br>
+
+            <label>Spicy:</label><br>
+            <input type="radio" id="hotlevel1" name="hotlevel" value="no spicy">
+            <label for="hotlevel1">No spicy</label><br>
+            <input type="radio" id="hotlevel2" name="hotlevel" value="less spicy">
+            <label for="hotlevel2">Less spicy</label><br>
+            <input type="radio" id="hotlevel3" name="hotlevel" value="very spicy">
+            <label for="hotlevel3">Very spicy</label><br>
+
+            <label for="Sauce">Sauce:</label><br>
+            <select id="Sauce" name="Sauce">
+                <option value="Tomato ketchup">Tomato ketchup</option>
+                <option value="chili sauce">Chili sauce</option>
+            </select><br>
+
+            <label for="foodPrice">Price:</label><br>
+            <input type="text" id="foodPrice" name="foodPrice" required><br>
+
+            <input type="submit" value="Add French Fries">
+             <button onclick="window.location.href='index.html';">HOME</button>
+        </form>
+    </body>
+</html>
+
+
+
+
